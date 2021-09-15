@@ -1,7 +1,7 @@
 <div class="contents row">
   <% @musicians.each do |musician| %>
     <div class="content_post">
-     <%= image_tag musician.image.variant(resize: '500x500'), class: 'musician-image' %>
+     <%= image_tag musician.image.variant(resize: '500x500'), class: 'musician-image'if musician.image.attached? %>
       <p><%= musician.musician_name %></p>
       <span class="date_of_birth">
         <%= musician.date_of_birth %>
