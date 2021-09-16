@@ -17,8 +17,10 @@
         </ul>
       </div>
       <p><%= musician.musician_name %></p>
-      <span class="date_of_birth">
-        <%= musician.date_of_birth %>
+      <span class="name">
+         <a href="/users/<%= musician.user.id %>">
+          <span>投稿者</span><%= musician.user.nickname %>
+        </a>
       </span>
     </div>
   <% end %>

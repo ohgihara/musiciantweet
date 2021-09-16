@@ -3,7 +3,7 @@ class MusiciansController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @musicians = Musician.all
+    @musicians = Musician.includes(:user)
   end
 
   def new
@@ -32,7 +32,7 @@ class MusiciansController < ApplicationController
 
   private
   def musician_params
-    params.require(:musician).permit(:musician_name, :musician_view, :musician_song,:date_of_birth,:image)
+    params.require(:musician).permit(:musician_name, :musician_view, :musician_song,:date_of_birth,:image).merge(user_id: current_user.id)
   end
 
   def set_musician

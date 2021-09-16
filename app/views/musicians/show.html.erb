@@ -12,7 +12,10 @@
       </ul>
     </div>
     <p><%= @musician.musician_view %></p>
-    <span class="name"><%= @musician.musician_name %>
+    <span class="name">
+      <a href="/users/<%= @musician.user.id %>">
+        <span>投稿者</span><%= @musician.user.nickname %>
+      </a>
     </span>
   </div>
 </div>
