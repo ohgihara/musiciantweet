@@ -1,5 +1,6 @@
 <div class="contents row">
-  <div class="content_post" style="background-image: url(<%= @musician.image %>);">
+  <div class="content_post">
+   <%= image_tag @musician.image.variant(resize: '500x500'), class: 'musician-image'if @musician.image.attached? %>
    <% if user_signed_in? && current_user.id == @musician.user_id %>
     <div class="more">
       <span><%= image_tag 'arrow_top.png' %></span>
@@ -13,13 +14,41 @@
       </ul>
     </div>
     <% end %>
-    <p><%= @musician.musician_view %></p>
+    <%# <p><%= @musician.musician_view %></p> %>
+    <p><%= @musician.musician_name %></p>
     <span class="name">
       <a href="/users/<%= @musician.user.id %>">
         <span>投稿者</span><%= @musician.user.nickname %>
       </a>
     </span>
   </div>
+</div>
+
+<div class="musician-show">
+ <div class="musician-box">
+  <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-musician">音楽家</th>
+          <td class="detail-music"><%= @musician.musician_name %></td>
+        </tr>
+         <tr>
+          <th class="detail-musician">生年月日</th>
+          <td class="detail-music"><%= @musician.date_of_birth %></td>
+        </tr>
+        <tr>
+          <th class="detail-musician">音楽家の概要</th>
+          <td class="detail-music"><%= @musician.musician_view %></td>
+        </tr>
+        <tr>
+          <th class="detail-musician">代表曲</th>
+          <td class="detail-music"><%= @musician.musician_song %></td>
+        </tr>
+      </tbody>
+   </table>
+  </div>
+</div>
+
   <div class="container">
     <% if user_signed_in? %>
       <%= form_with(model: [@musician, @comment], local: true) do |form| %>
@@ -39,4 +68,3 @@
       <% end %>
     </div>
   </div>
-</div>

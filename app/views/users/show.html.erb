@@ -1,7 +1,10 @@
+<div class="mypage-name">
+ <p><%= @nickname %>さんの投稿一覧</p>
+</div>
 <div class="contents row">
-  <p><%= @nickname %>さんの投稿一覧</p>
   <% @musicians.each do |musician| %>
-    <div class="content_post" style="background-image: url(<%= musician.image %>);">
+    <div class="content_post">
+     <%= image_tag musician.image.variant(resize: '500x500'), class: 'musician-image'if musician.image.attached? %>
       <p><%= musician.musician_name %></p>
       <span class="name"><%= musician.musician_name %></span>
     </div>

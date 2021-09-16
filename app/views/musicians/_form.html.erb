@@ -1,8 +1,8 @@
 <%= form_with(model: musician, local: true) do |form| %>
-      <%= form.text_field :musician_name, placeholder: "Nickname" %>
+      <%= form.text_field :musician_name, placeholder: "音楽家名" %>
       <%= form.file_field  :image, placeholder: "画像" %>
-      <%= form.text_field :date_of_birth, placeholder: "Nickname" %>
-      <%= form.text_area :musician_view, placeholder: "text", rows: "10" %>
-      <%= form.text_area :musician_song, placeholder: "text", rows: "10" %>
+      <%= form.text_field :date_of_birth, placeholder: "音楽家の生年月日" %>
+      <%= form.text_area :musician_view, placeholder: "音楽家の概要", rows: "10" %>
+      <%= form.text_area :musician_song, placeholder: "代表曲", rows: "10" %>
       <%= form.submit "SEND" %>
     <% end %>
