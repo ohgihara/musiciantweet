@@ -28,6 +28,8 @@ class MusiciansController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @musician.comments.includes(:user)
   end
 
   private
