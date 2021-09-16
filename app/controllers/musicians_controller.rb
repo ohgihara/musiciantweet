@@ -1,5 +1,6 @@
 class MusiciansController < ApplicationController
   before_action :set_musician, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
     @musicians = Musician.all
@@ -36,6 +37,12 @@ class MusiciansController < ApplicationController
 
   def set_musician
     @musician = Musician.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 
 end
