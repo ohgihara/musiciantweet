@@ -1,5 +1,4 @@
 .musician-show {
-  background-color: #f8f8f8;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -8,7 +7,6 @@
 }
 
 .musician-box {
-  background-color: #FFF;
   width: 70vw;
   min-width: 1200px;
   padding: 10vh 15vw;
