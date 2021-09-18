@@ -27,6 +27,7 @@ header.header div.header__bar.row h1.grid-6 a {
 header.header div.header__bar.row div.grid-6 {
   float: right;
   text-align: right;
+  margin-top: 8px;
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
@@ -42,7 +43,6 @@ header.header .user_nav {
 }
 
 header.header .user_nav span {
-  top: 5px;
   float: left;
   width: 150px;
   height: 50px;
@@ -81,4 +81,13 @@ header.header .user_nav ul li a {
   padding: 10px 20px;
   text-align: left;
   border-bottom: 1px solid #d8d8d8;
+}
+
+.row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  *zoom: 1;
 }

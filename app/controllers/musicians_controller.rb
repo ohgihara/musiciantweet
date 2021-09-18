@@ -11,7 +11,12 @@ class MusiciansController < ApplicationController
   end
 
   def create
-    Musician.create(musician_params)
+    @musician = Musician.new(musician_params)
+    if @musician.save
+      redirect_to create_path
+    else
+      render :new
+    end
   end
 
   def destroy

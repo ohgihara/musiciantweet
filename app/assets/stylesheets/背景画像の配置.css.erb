@@ -1,10 +1,22 @@
 <%# 背景画像の配置 %>
 header {
-  background-image: url("<%= asset_path('images.jpg') %>")
+  background-image: url("<%= asset_path('images.jpg') %>")!important;
 }
 
 .content_post {
   background-image: url("<%= asset_path('download.jpg') %>")
+}
+
+body {
+  background-image: url("<%= asset_path('download-12.jpg') %>")!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
+}
+
+footer {
+  background-image: url("<%= asset_path('download-9.jpg') %>")!important;
+  background-repeat: no-repeat!important;
+  background-size: cover!important;
 }
 
 <%# 背景画像の配置 %>
