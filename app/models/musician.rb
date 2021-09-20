@@ -10,3 +10,4 @@ class Musician < ApplicationRecord
 end
 
 # , format: {with: message: "音楽家の生まれた年を入力してください。"}
+# , format: { with:  /\A\d{3,4}年\z/ }

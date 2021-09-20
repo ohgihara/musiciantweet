@@ -91,3 +91,8 @@ header.header .user_nav ul li a {
   margin-bottom: 0;
   *zoom: 1;
 }
+
+.mypage-name {
+  text-align: center;
+  color: blue;
+}
