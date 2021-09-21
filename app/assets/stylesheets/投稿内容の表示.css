@@ -4,9 +4,6 @@
 
 
 /* 投稿一覧の配置について */
-
-
-
 div.contents.row {
   display: flex;
   flex-wrap: wrap;

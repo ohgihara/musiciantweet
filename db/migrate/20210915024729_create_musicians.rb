@@ -5,6 +5,7 @@ class CreateMusicians < ActiveRecord::Migration[6.0]
       t.text :musician_view, null: false
       t.text :musician_song, null: false
       t.string :date_of_birth, null: false
+      t.integer :musician_era_id, null: false
       t.timestamps
     end
   end

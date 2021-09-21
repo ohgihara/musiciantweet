@@ -1,9 +1,14 @@
 footer {
-  margin: 0px auto;
+  margin-top: auto;
   padding: 10px;
-  color: #D8D8D8;
 }
 
 footer p {
   text-align: center;
+}
+
+.header_to_footer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -1,15 +1,8 @@
-.container {
+.user-form {
+  margin-top: 50px;
   padding: 30px;
   box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
   background-color: wheat;
   box-sizing: border-box;
   text-align: center;
-}
-
-.container h3 {
-  margin: 0 0 20px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-  color: #666;
 }

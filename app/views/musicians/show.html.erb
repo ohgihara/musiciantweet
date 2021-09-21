@@ -31,6 +31,10 @@
           <th class="detail-musician">音楽家</th>
           <td class="detail-music"><%= @musician.musician_name %></td>
         </tr>
+        <tr>
+          <th class="detail-musician">時代区分</th>
+          <td class="detail-music"><%= @musician.musician_era.name %></td>
+        </tr>
          <tr>
           <th class="detail-musician">生年月日</th>
           <td class="detail-music"><%= @musician.date_of_birth %></td>

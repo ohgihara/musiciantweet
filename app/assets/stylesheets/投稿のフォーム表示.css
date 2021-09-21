@@ -1,6 +1,6 @@
 form input,
 form textarea {
-  width: 100%;
+  width: 60%;
   margin: 5px 0 15px;
   padding: 10px;
   border: 1px solid #D8D8D8;
@@ -18,5 +18,14 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
   background-color: red;
+}
+
+.select-box {
+  width: 60%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
 }
 

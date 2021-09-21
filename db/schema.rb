@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_09_16_051220) do
     t.text "musician_view", null: false
     t.text "musician_song", null: false
     t.string "date_of_birth", null: false
+    t.integer "musician_era_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "user_id"

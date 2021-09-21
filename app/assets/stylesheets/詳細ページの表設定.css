@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
 }
 
 .musician-box {
@@ -34,6 +33,10 @@
   border: 1px solid #dedede;
   background-color: white;
   font-size: 14px;
+}
+
+td {
+  white-space: pre-wrap;
 }
 
 
