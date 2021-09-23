@@ -1,24 +1,58 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ名
+ Musiciantweet
 
-Things you may want to cover:
+# 概要
+ クラシック音楽家の紹介ができ、その内容を誰でも閲覧することができます。
+ また、音楽家の代表曲や音楽用語を調べることもできます。
 
-* Ruby version
+# URL
 
-* System dependencies
+# テスト用アカウント
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+# 制作背景(意図)
+ 私は、クラシック音楽が好きで、ピアノを引くのですが
+ 作曲家の概要や、代表曲を手軽に調べられるサイトがあると便利であると感じ、
+ 本アプリケーションの制作に至りました。また、クラシック音楽の分野では専門的な音楽用語もあるため、
+ それらを紹介できるページも用意しました。
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# 工夫したポイント
+「音楽紹介」ページにおいて、「時代区分」の箇所をアクティブハッシュを用いて選択をできるようにした。
+ また、最初の一覧ページは時代区分が古い順に音楽家が表示されるようにした。
+ クラシック音楽に詳しくない方も利用しやすいように、代表曲の掲載や、音楽用語を調べられるページの実装をした。
 
-* Deployment instructions
 
-* ...
+# 使用技術　（開発環境)
+ * バックエンド *
+ Ruby, Ruby on Rails
+
+ * フロントエンド
+ html, css
+
+ * データベース
+ MySqul, SequelPro
+
+ * 本番環境
+ Heroku
+
+ * ソース管理
+ GitHub, GitHubDesktop
+
+ * テスト
+ Rspec
+
+ * エディタ
+ VSCode
+
+
+
+# 課題や今後実装したい機能
+ 「音楽家紹介」のページにおいて、入力内容が空の時のみにバリデーションをかけるのではなく、入力内容が紹介ページにふさわしくなるようなバリデーション
+ 及び、エラーメッセージを表示できるようにしたい。
+
+# DB設計
+
