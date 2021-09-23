@@ -31,6 +31,9 @@ class MusicTermsController < ApplicationController
     musicterm.update(music_term_params)
   end
 
+  def search
+    @music_terms = MusicTerm.search(params[:keyword])
+  end
 
 
 
