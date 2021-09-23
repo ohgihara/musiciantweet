@@ -27,25 +27,25 @@
 
 
 # 使用技術　（開発環境)
- * バックエンド *
+ ## バックエンド 
  Ruby, Ruby on Rails
 
- * フロントエンド
+ ## フロントエンド
  html, css
 
- * データベース
+ ## データベース
  MySqul, SequelPro
 
- * 本番環境
+ ## 本番環境
  Heroku
 
- * ソース管理
+ ## ソース管理
  GitHub, GitHubDesktop
 
- * テスト
+ ## テスト
  Rspec
 
- * エディタ
+ ## エディタ
  VSCode
 
 
@@ -54,5 +54,77 @@
  「音楽家紹介」のページにおいて、入力内容が空の時のみにバリデーションをかけるのではなく、入力内容が紹介ページにふさわしくなるようなバリデーション
  及び、エラーメッセージを表示できるようにしたい。
 
+
 # DB設計
+
+## users テーブル
+
+| Column                  | Type   | Options                   |
+| ------------------      | ------ | -----------               |
+| email                   | string | null: false               |
+| encrypted_password      | string | null: false               |
+| nickname                | string | null: false               |
+
+
+### Association
+
+- has_many :musicians
+- has_many :comments
+- has_many :music_terms
+
+
+
+
+
+## musicians テーブル
+
+| Column             | Type    | Options                   |
+| ------------------ | ------  | -----------               |
+| musician_name      | string  | null: false               |
+| musician_view      | text    | null: false               |
+| musician_song      | text    | null: false               |
+| date_of_birth      | string  | null: false               |
+| musician_era_id    | integer | null: false               |
+
+
+### Association
+
+- blongs_to :user
+- has_many :comments
+
+
+
+
+## comments テーブル
+
+| Column             | Type    | Options                   |
+| ------------------ | ------  | -----------               |
+| user_id            | integer | null: false               |
+| musician_id        | integer | null: false               |
+| text               | text    | null: false               |
+
+
+
+### Association
+
+- belongs_to :musician
+- belongs_to :user
+
+
+
+
+
+## music_terms テーブル
+
+| Column             | Type    | Options                   |
+| ------------------ | ------  | -----------               |
+| music_term         | storing | null: false               |
+| music_term_view    | text    | null: false               |
+| user_id            | integer | null: false               |
+
+
+
+### Association
+- belongs_to :user
+
 
