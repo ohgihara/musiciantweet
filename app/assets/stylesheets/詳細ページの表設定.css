@@ -1,3 +1,4 @@
+/* showページの照会表設定 */
 .musician-show {
   width: 100vw;
   display: flex;
@@ -38,8 +39,51 @@
 td {
   white-space: pre-wrap;
 }
+/* showページの照会表設定 */
 
 
+/* 音楽用語一覧の表設定 */
+.termlist {
+
+}
+
+
+
+.musicterm-index {
+  width: 50%;
+}
+
+.musicterm-box {
+  padding: 0vh 15vw;
+  min-width: 1300px;
+}
+
+.detail-musicterm-table {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.detail-musicterm {
+  width: 20%;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.detail-musicterm-view {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #dedede;
+  background-color: white;
+  font-size: 14px;
+}
+
+td {
+  white-space: pre-wrap;
+}
+/* 音楽用語一覧の表設定 */
 
 
 

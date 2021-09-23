@@ -3,7 +3,7 @@ class MusiciansController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @musicians = Musician.includes(:user)
+    @musicians = Musician.includes(:user).order("musician_era_id ASC")
   end
 
   def new

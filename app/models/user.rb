@@ -6,4 +6,5 @@ class User < ApplicationRecord
   
   has_many :musicians
   has_many :comments
+  has_many :music_terms
 end

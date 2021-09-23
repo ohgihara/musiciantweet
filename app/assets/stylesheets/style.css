@@ -164,10 +164,6 @@ select {
 
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-body,
-html {
-  height: 100%;
-}
 
 body {
   padding-top: 60px;

@@ -148,3 +148,8 @@ div.contents.row .success {
 div.contents.row .success h3 {
   margin: 10px auto;
 }
+
+.musicterm-image{
+  width: 60%;
+  height: 70%;
+}

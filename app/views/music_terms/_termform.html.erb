@@ -1,0 +1,7 @@
+<%= form_with(model: music_term, local: true) do |form| %>
+<%= form.label :紹介したい音楽用語についてご入力ください。 %> <em></em><br />
+ <%= form.text_field :music_term, placeholder: "紹介する用語について記述しましょう。" %>
+ <%= form.file_field  :image, placeholder: "画像を貼り付けましょう。" %>
+ <%= form.text_area  :music_term_view, placeholder: "用語の説明について記述しましょう。" %>
+ <%= form.submit "掲載する" %>
+<% end %>

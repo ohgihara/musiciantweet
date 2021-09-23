@@ -1,0 +1,26 @@
+<div class="musicterm-index">
+ <div class="musicterm-box">
+  <table class="detail-musicterm-table">
+      <tbody>
+        <tr>
+          <th class="detail-musicterm">音楽用語</th>
+          <td class="detail-musicterm-view"><%= musicterm.music_term %></td>
+        </tr>
+        <tr>
+          <th class="detail-musicterm">概要</th>
+          <td class="detail-musicterm-view"><%= musicterm.music_term_view %></td>
+        </tr>
+         <tr>
+          <th class="detail-musicterm">参考画像</th>
+          <td class="detail-musicterm-view"><%= image_tag musicterm.image.variant(resize: '250x200'), class: 'musicterm-image'if musicterm.image.attached?  %>
+          <div class="more">
+          <% if user_signed_in? && current_user.id == musicterm.user_id %>         
+            <%= link_to '編集', edit_music_term_path(musicterm.id), method: :get %>
+            <%= link_to '削除', music_term_path(musicterm.id), method: :delete %>
+          <% end %>
+        </td>
+        </tr>
+      </tbody>
+   </table>
+  </div>
+</div>

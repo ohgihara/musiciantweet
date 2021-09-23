@@ -27,7 +27,7 @@ header.header div.header__bar.row h1.grid-6 a {
 header.header div.header__bar.row div.grid-6 {
   float: right;
   text-align: right;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 header.header div.header__bar.row div.grid-6 a.post {
@@ -95,4 +95,8 @@ header.header .user_nav ul li a {
 .mypage-name {
   text-align: center;
   color: blue;
+}
+
+.terms-link{
+  margin-top: 8px;
 }
