@@ -8,9 +8,8 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 
-<div class="termlist">
+
   <% @music_terms.each do |term| %>
     <%= render partial: "musicterm", locals: { musicterm: term} %>
   <% end %>
-</div>
 </div>

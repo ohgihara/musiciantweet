@@ -3,6 +3,7 @@ class Musician < ApplicationRecord
   belongs_to_active_hash :musician_era
 
   has_one_attached :image
+  validates :image, presence: true
   validates :musician_name, presence: true
   validates :musician_view, presence: true
   validates :musician_song, presence: true

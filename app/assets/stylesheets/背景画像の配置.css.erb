@@ -7,10 +7,14 @@ header {
   background-image: url("<%= asset_path('download.jpg') %>")
 }
 
-body {
+body, section:before {
   background-image: url("<%= asset_path('download-12.jpg') %>")!important;
   background-repeat: no-repeat!important;
   background-size: cover!important;
+}
+
+section:before {
+  filter: blur(100px);
 }
 
 footer {

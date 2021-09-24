@@ -34,9 +34,9 @@ ActiveRecord::Schema.define(version: 2021_09_21_071003) do
   end
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "musician_id"
-    t.text "text"
+    t.integer "user_id", null: false
+    t.integer "musician_id", null: false
+    t.text "text", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(version: 2021_09_21_071003) do
   create_table "music_terms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "music_term", null: false
     t.text "music_term_view", null: false
-    t.integer "user_id"
+    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

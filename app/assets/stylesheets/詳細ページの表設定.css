@@ -43,24 +43,12 @@ td {
 
 
 /* 音楽用語一覧の表設定 */
-.termlist {
 
-}
-
-
-
-.musicterm-index {
-  width: 50%;
-}
-
-.musicterm-box {
-  padding: 0vh 15vw;
-  min-width: 1300px;
-}
 
 .detail-musicterm-table {
-  margin-bottom: 30px;
-  width: 100%;
+  padding-top: 30px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .detail-musicterm {
