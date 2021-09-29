@@ -1,5 +1,5 @@
 <%= form_with(model: musician, local: true) do |form| %>
-<%# <%= render 'shared/error_messages', model: f.object %> 
+<%= render 'error_messages', model: form.object %>
       <%= form.text_field :musician_name, placeholder: "音楽家名" %>
       <%= form.file_field  :image, placeholder: "音楽家の画像を貼り付けましょう。" %>
       <%= form.collection_select(:musician_era_id,MusicianEra.all, :id, :name, {}, {class:"select-box", id:"musician-era"}) %>
