@@ -3,7 +3,7 @@ FactoryBot.define do
     musician_name                 {Faker::Lorem.sentence}
     musician_view                 {Faker::Lorem.sentence}
     musician_song                 {Faker::Lorem.sentence}
-    date_of_birth                 {Faker::Lorem.sentence}
+    date_of_birth                 { '1685~1750年' }
     musician_era_id               { 3 } 
     association :user 
 
