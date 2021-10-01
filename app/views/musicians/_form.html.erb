@@ -3,7 +3,7 @@
       <%= form.text_field :musician_name, placeholder: "音楽家名" %>
       <%= form.file_field  :image, placeholder: "音楽家の画像を貼り付けましょう。" %>
       <%= form.collection_select(:musician_era_id,MusicianEra.all, :id, :name, {}, {class:"select-box", id:"musician-era"}) %>
-      <%= form.text_field :date_of_birth, placeholder: "音楽家の生年月日" %>
+      <%= form.text_field :date_of_birth, placeholder: "生没年" %>
       <%= form.text_area :musician_view, placeholder: "音楽家の概要", rows: "10" %>
       <%= form.text_area :musician_song, placeholder: "代表曲", rows: "10" %>
       <%= form.submit "SEND" %>
