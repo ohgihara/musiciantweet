@@ -92,7 +92,7 @@
 
 
 # 課題や今後実装したい機能
-  音楽家の出身地のカラムを設け、出身地の地図を閲覧できるように設定をしたい。
+ 
 
 # DB設計
 
@@ -120,6 +120,7 @@
 | Column             | Type    | Options                   |
 | ------------------ | ------  | -----------               |
 | musician_name      | string  | null: false               |
+| birth_place        | string  | null: false               |
 | musician_view      | text    | null: false               |
 | musician_song      | text    | null: false               |
 | date_of_birth      | string  | null: false               |
