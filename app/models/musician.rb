@@ -11,7 +11,6 @@ class Musician < ApplicationRecord
   validates :date_of_birth,format: {with: /\A[0-9]{3,4}~[0-9]{3,4}年\z/, message:"「生没年」を〇〇年(3,4桁)~〇〇年(3,4桁)でご入力ください。"}
   validates :musician_view, presence: { message: '「音楽家の概要」をご入力ください。' }
   validates :musician_song, presence: { message: '「代表曲」をご入力ください。' }
-  validates :birth_place, presence: { message: '「出身地」をご入力ください。' }
 
   belongs_to :user
   has_many :comments

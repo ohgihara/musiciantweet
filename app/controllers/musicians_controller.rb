@@ -38,7 +38,7 @@ class MusiciansController < ApplicationController
 
   private
   def musician_params
-    params.require(:musician).permit(:musician_name, :musician_view, :musician_song, :date_of_birth, :image, :musician_era_id,:birth_place).merge(user_id: current_user.id)
+    params.require(:musician).permit(:musician_name, :musician_view, :musician_song, :date_of_birth, :image, :musician_era_id).merge(user_id: current_user.id)
   end
 
   def set_musician
