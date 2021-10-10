@@ -159,9 +159,19 @@ div.contents.row .success h3 {
 
 .youtube_title{
   text-align: center;
+  color: coral;
 }
 
 
 .youtube{
   margin: 0 auto;
+}
+
+
+
+.musician_introduce_title{
+  text-align: center;
+  margin-top: 80px;
+  color: rosybrown;
+  font-size: 20px;
 }

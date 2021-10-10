@@ -1,5 +1,7 @@
-<p class="youtube_title">本日のおすすめの演奏動画</p>
+<p class="youtube_title">今週のおすすめの演奏動画</p>
 <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/ghTitIMtTCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p class="musician_introduce_title">演奏家の紹介一覧</p>
 <div class="contents row">
   <% @musicians.each do |musician| %>
     <%= render partial: "musician", locals: { musician: musician } %>
