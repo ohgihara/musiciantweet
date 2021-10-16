@@ -1,0 +1,18 @@
+  <table class="detail-musicterm-table-index">
+      <tbody>
+        <tr>
+          <th class="detail-musicterm">音楽用語</th>
+          <td class="detail-musicterm-view"><%= musicterm.music_term %></td>
+        </tr>
+        <tr>
+          <th class="detail-musicterm">概要</th>
+          <td class="detail-musicterm-view"><%= musicterm.music_term_view %></td>
+        </tr>
+         <tr>
+          <th class="detail-musicterm">参考画像</th>
+          <td class="detail-musicterm-view"><%= image_tag musicterm.image.variant(resize: '250x200'), class: 'musicterm-image'if musicterm.image.attached?  %>
+        </td>
+        </tr>
+      </tbody>
+   </table>
+  

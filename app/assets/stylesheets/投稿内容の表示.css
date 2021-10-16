@@ -133,9 +133,6 @@ div.contents.row div.content_post span.name span {
 /* 右下投稿者の表示について */
 
 
-
-
-
 div.contents.row .success {
   margin: 20px 0;
   padding: 30px;
@@ -149,25 +146,26 @@ div.contents.row .success h3 {
   margin: 10px auto;
 }
 
+
 .musicterm-image{
   width: 60%;
   height: 70%;
 }
 
 
+/* musician_indexページのbody上部部分 */
+.today-colum{
+  display: flex;
+}
 
 
 .youtube_title{
-  text-align: center;
   color: coral;
 }
 
-
-.youtube{
-  margin: 0 auto;
+.today_title{
+  color: blue;
 }
-
-
 
 .musician_introduce_title{
   text-align: center;

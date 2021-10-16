@@ -4,6 +4,7 @@ class MusiciansController < ApplicationController
 
   def index
     @musicians = Musician.includes(:user).order("musician_era_id ASC")
+    @random = MusicTerm.order("RAND()").limit(1)
   end
 
   def new
