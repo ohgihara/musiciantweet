@@ -156,6 +156,7 @@ div.contents.row .success h3 {
 /* musician_indexページのbody上部部分 */
 .today-colum{
   display: flex;
+  justify-content: space-around;
 }
 
 
