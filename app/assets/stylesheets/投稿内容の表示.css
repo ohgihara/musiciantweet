@@ -154,6 +154,12 @@ div.contents.row .success h3 {
 
 
 /* musician_indexページのbody上部部分 */
+.detail-musicterm-table-index{
+  
+}
+
+
+
 .today-colum{
   display: flex;
   justify-content: space-around;
